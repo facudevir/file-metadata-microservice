@@ -1,0 +1,22 @@
+{
+  "name": "file-metadata-microservice",
+  "version": "1.0.0",
+  "description": "freeCodeCamp File Metadata Microservice",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "freecodecamp",
+    "file-metadata",
+    "microservice"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}
