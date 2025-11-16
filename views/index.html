@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>File Metadata Microservice</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>File Metadata Microservice</h1>
+
+      <section class="card">
+        <h2>Upload a file</h2>
+        <p>
+          Choose any file and submit it. This service will return its
+          <strong>name</strong>, <strong>type</strong> and <strong>size</strong> in bytes.
+        </p>
+
+        <!-- IMPORTANTE: action y name coinciden con lo que espera freeCodeCamp -->
+        <form
+          id="upload-form"
+          enctype="multipart/form-data"
+          method="POST"
+          action="/api/fileanalyse"
+        >
+          <input type="file" name="upfile" id="upfile" required />
+          <button type="submit">Upload file</button>
+        </form>
+      </section>
+
+      <section class="card info">
+        <h3>API endpoint</h3>
+        <p><code>POST /api/fileanalyse</code></p>
+        <p>Form field: <code>upfile</code></p>
+      </section>
+    </main>
+  </body>
+</html>
